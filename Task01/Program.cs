@@ -17,5 +17,5 @@ if (number1 == number2 * number2)
 else
 {
     Console.Write("false-no");
-    Console.Write("введите другое целое число");
+    Console.Write(" (введите другое целое число)");
 }
