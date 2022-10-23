@@ -12,9 +12,11 @@ Console.Write("Введите второе целое число: ");
 int number2 = Convert.ToInt32(Console.ReadLine());
 if (number1 > number2)
 {
-    Console.Write($"max = {number1}");
+    Console.WriteLine($"max = {number1}");
+    Console.WriteLine($"min = {number2}");
 }
 else
 {
-    Console.Write($"max = {number2}");
+    Console.WriteLine($"max = {number2}");
+    Console.WriteLine($"min = {number1}");
 }
