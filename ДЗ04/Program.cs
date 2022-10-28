@@ -11,16 +11,16 @@
         int b = Convert.ToInt32(Console.ReadLine());
         Console.Write("Введите третье целое число: ");
         int c = Convert.ToInt32(Console.ReadLine());
-        int max = 0;
-        if (a > max && a > b && a > c)
+        int max = a;
+        if (a > b && a > c)
         {
             Console.Write($" максимальное число = {a}");
         }
-         else if (b > max && b > a && b > c)
+         else if (b > a && b > c)
         {
             Console.Write($" максимальное число = {b}");
         }
-        else if (c > max && c > a && c > b)
+        else if (c > a && c > b)
         {
             Console.Write($" максимальное число = {c}");
         }
