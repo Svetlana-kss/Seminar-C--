@@ -17,10 +17,25 @@ if (number1 % number2 ==0)
 else
 Console.WriteLine($"Не кратно, остаток {number1 % number2}");
 
-// !!!????int multipleDigit(int num)
-// {
-//     int lastDigit = number1 % number2;
-//     return num % num;
-// }
-// int result = multipleDigit(number1 % number2);
-// Console.WriteLine("Не кратно");
+
+//МЕТОД
+
+int multipleDigit(int number1, int number2)
+{
+    int result = number1 % number2;
+    return result;
+}
+Console.Write("Введите первое целое число: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите второе целое число: ");
+int num2 = Convert.ToInt32(Console.ReadLine());
+
+int result = multipleDigit(num1, num2);
+if (result>0)
+{
+    Console.WriteLine($"Не кратно, остаток {result}");
+}
+else
+{
+    Console.WriteLine("Кратно");
+}
