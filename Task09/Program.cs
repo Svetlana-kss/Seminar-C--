@@ -8,6 +8,14 @@
 
 int number = new Random().Next(10, 100);
 Console.WriteLine($"Случайное число из отрезка 10 - 99 => {number}");
+int maxDigit1 = MaxDigit(56);
+Console.WriteLine($"Наибольшее цифра числа {56} равна {maxDigit1}");
+int maxDigit2 = MaxDigit(67);
+Console.WriteLine($"Наибольшее цифра числа  равна {maxDigit2}");
+int maxDigit3 = MaxDigit(99);
+Console.WriteLine($"Наибольшее цифра числа {99} равна {maxDigit3}");
+int maxDigit4 = MaxDigit(33);
+Console.WriteLine($"Наибольшее цифра числа {33} равна {maxDigit4}");
 
 // int firstDigit = number / 10; // 78/10=7 целочисленное деление
 // int secondDigit = number % 10; // 78%10=8
@@ -32,10 +40,10 @@ Console.WriteLine($"Случайное число из отрезка 10 - 99 =>
 // Console.Write($"Наибольшее цифра числа {number} равна ");
 // Console.WriteLine(firstDigit > secondDigit ? firstDigit : secondDigit);
 
-int MaxDigit(int number)
+int MaxDigit(int num)
 {
-    int firstDigit = number / 10;
-    int secondDigit = number % 10;
+    int firstDigit = num / 10;
+    int secondDigit = num % 10;
     return firstDigit > secondDigit ? firstDigit : secondDigit;
 }
 
