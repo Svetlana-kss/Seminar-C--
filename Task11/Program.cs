@@ -25,4 +25,4 @@ int DelsecondDigit(int num)
     return firstDigit*10 + thirdDigit;
 }
 int result = DelsecondDigit(number);
-Console.WriteLine($"Наибольшее цифра числа {result}");
+Console.WriteLine($"Получено число {result}");
