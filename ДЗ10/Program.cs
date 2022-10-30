@@ -8,7 +8,6 @@
 Console.Write("Введите трехзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-
 int ShowssecondDigit(int num)
 {
     int secondDigit = num / 10 % 10;
