@@ -6,6 +6,7 @@
 
 int number = new Random().Next(100, 1000);
 Console.WriteLine($"Случайное трехзначное число => {number}");
+
 // Первый способ
 int firstDigit = number / 100; // 788/100=7 целочисленное деление
 int thirdDigit = number % 10; // 788%10=8
